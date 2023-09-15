@@ -36,7 +36,11 @@ from langchain.schema import (
     BaseMessage,
 )
 import os
+from dotenv import load_dotenv
 
+load_dotenv() 
+# Set OpenAI API key
+openai_api_key=os.environ["OPENAI_API_KEY"]
 # Set OpenAI API key
 
 # # Read the CSV file
