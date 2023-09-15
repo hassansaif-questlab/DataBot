@@ -38,7 +38,7 @@ from langchain.schema import (
 import os
 
 # Set OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+
 # # Read the CSV file
 # df = pd.read_csv("mydata.csv", encoding='cp1252')
 # Streamlit app header
