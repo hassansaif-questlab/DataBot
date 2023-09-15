@@ -6,4 +6,5 @@ pandas
 openai
 python-dotenv
 chardet
+pandas
 
