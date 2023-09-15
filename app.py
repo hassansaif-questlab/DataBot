@@ -55,12 +55,7 @@ uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
 # Check if a file has been uploaded
 if uploaded_file is not None:
-    # Use chardet to detect the file encoding
-    raw_data = uploaded_file.read()
-    file_encoding = chardet.detect(raw_data)["encoding"]
-
-    # Reopen the file with the detected encoding and read it into a DataFrame
-    df = pd.read_csv(uploaded_file, encoding=file_encoding)
+    df = pd.read_csv(uploaded_file, encoding='cp1252')
 
 class CustomPythonAstREPLTool(PythonAstREPLTool):
     name = "python"
