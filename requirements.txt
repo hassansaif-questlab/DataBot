@@ -4,3 +4,4 @@ pandasql
 tabulate
 pandas
 openai
+python-dotenv
